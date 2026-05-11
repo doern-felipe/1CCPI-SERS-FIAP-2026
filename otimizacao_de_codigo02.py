@@ -14,3 +14,12 @@ inicio = time.time()
 soma_np = np.sum(np.arange(10**6))
 fim = time.time()
 print(fim - inicio, "segundos")
+
+# Mais otimização:
+n = 10**6
+inicio = time.time()
+soma = n * (n-1) / 2
+fim = time.time()
+print(fim - inicio, "segundos")
+
+print(soma)
